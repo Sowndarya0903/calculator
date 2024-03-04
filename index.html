@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=u_8skQNHtpFjgyL_VKU-affgAcbL17duZi6CzT5PMfcsjQMIkV_8bGWJB9Vp_RtB_zrZk6eVY7tTROiXTkQ8JR-x8aSTuv_IwAkX6Zu3SDdx5Gz3roCYG2zlQYjBEHR5OM79X4oE-xsaBnAm2h0gs3Z1ft7ho2G08DHQYyh7PIrQC11-Vy_FUJsynQp6hKZ-B9rqqNJUzBkmPDrjWnwvgFTWQPWvTedsoM-cpg1E8d6_oKjjvUL80WEntv9JbX4V4OHrf6pgm7ppSqaoaGRgthcMiDYZjw1qq4xUEu92BTYkaMZ41VbO9VHXJNQrXVHgAWFY-ve3yauNjeBACtXGB90aDnYVdpi5AHeOZ-rvYIulI_I4U3pDzkTAxF2dxliof59MsP3-HeWBiz3PlHbLgs1xv1kheuRP_T1-t0xjrVDc2qjXokprhmLI5Qo9_PeI7Kw9aki3i9odi-KPg65SJET36-jvThxUCorM4nNIVOkHFdth-W11R-Dj3rHo1THDanyEFQkOMR4Te4zXyPTFTnSOMxAlGwrIFXwUFnUlW-Xjlu1ZmAr4SvT-PgOGXuaNWQddfXvK1M3ctEwRrawOi6zXMV5h2aZcaDgIbNDSF_wqkLJQPInsY0QFM-ealXDJZ5_yCUeyb_S_yD2bO7Y1uDLahGXTQvVwzP83N2A_B7bEnEJ299ZSvhmd9PqSqUDRsZyxvVWPvEWqXIqrnAEozuqYJNU2n871tdDFJFNmaHBLXQrtKOkKoOJGjxbh_sIpBkqVR1Xte8VdXel9M8eo-EAcOXVYK9VE3KmwuXpljFqQZHu5m6egUYH9_MhOgR998gc6dCxoJJshalPFf16UyvsiJHPlHjevFXlFKKjcCboohmW_l8RjCNzCFLWzl2Y-xZVxbYNGQZGlNLNysUlluTStZb-RT22RtpwYH_Fxldj13HOsR7PIFUggPsTgyGdwrsv-KW4bppQGFUN2jKfDoPzheOu2qV2Pr4d0a9J0tUHYKf6o3o55huJF476-T_cdgnPDqyyRn_JA0UWoTKm48ppB9lmbA7aoOCwp0iLb0UeMZdZqzaec-kimwHa3Jusa9v-OGSsjTHc2dkWKHFHFVnl7n9OeV_l4ibZhMWYtkVEfHBWk7bcrmKYgESk0FQQ03y6f4cKNpQ-Po9v66XVdzKG9YIeBYK8hFaSQkn6j2UntjaobTcRgznEsuOeF5R-ol2APCziA6uBMX3FsrWPBt-c9fE5I5sCA-l9P3wdnlKGRwwCtKwkBqQzCX_iCLBX13nFIFWqH273_G5iMIX6U3-k1SVXH3-fnuHJ2IVgnUG5xeHc8r6pPIxymdQnUPGEnj0P9SB2yjarZmtHEhVi_fAfv5hQrrVf-faH6Jqv-Bhxya-RYyJKWXT5FBPs_A-hyGhkQItG8NaPk9UJiRR_EwY4SFeQcJXZQTyQCTts_piHXK1vo0hjGsxfUa2EOaCCGmxs_tK_O1av--8vkZEIn547sFiGkeRvyMWFs5wbDhI40VTPKfFR-coXgn7A2mX1Hiv0XstrNFGENLY24G5r2ISaLcWQ8i90AgxR6a9DnU2TIpDuBZoWCNCes0zLVBLoj4uA2IbquvQXWASPTiEbEz_2blseLzWPDJyo8KLfqtmPGZSOVps9SjJvLNElqUJw6P8mx_ie1QNWL9HqEYiYrCg" nonce="68ad01578eac0c07c7b517109dd8e492" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTNmZGUwZjNkOGEmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctZjoxNzkyNjEwMTU1MjE2OTE3OTM5JnRoPTE4ZTBhMTcwNDI3NjU1YjMmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2x0ZDNrZnQ5MCZzYWRkYmF0PUFOR2pkSjk5TF9kN3I4QmZTRWlBS3BqRHRzMVd6WTJfQVFqejJwMFVEbmNsUzdhWFVlQVo5T01yV1Y4YllKYkRHSnAzcGhXS3FIODV1VVdKeUNOZy1LdFZsZEZERVBNTjJtNndUOURfZ1JJdlRIOEo1Yk0yb1o4VXJtcTFwT2tvdmVRR3JIM1hsZjFOVU5TRm9seDFpTlA5WlRpS1RXblFpeVJibUtxdFNVdmNTaDhYYTQySkhRS3J5SEpQV2t0MS15dHB6Z2RRamdtQUtTbzdtdlFxMTBZTmM5a2lMM1Q2NlpLQnU2YTFvaUc3LW0wTmxDQ0FZYVZZNlZjbWQ4eTJfSUIxT1M1SkxiLTlOOUVJSUdiczNfYzBDRG5nQmxKYTZhSG9Dd2JHODFHa2pIdXNjUXBpb0htXzNOVnhiaHlTUnI2M0s4MTV1U0hpNndKYXdsVW1vYTlZMmg4UFVpMXhTY0kwRndXWjdyQkhFLV8zNXJjUVdEX2NGSklIRFYxSS1YQjVoODRkY1RoOFczVXh6RkNQYkJqM3V1dEhfRlFscVIxcFV4c2t4VXpNQkY4OV9vUlhCSXM1cnRUNWZzWncyTFV0TmdFcGRwVVIxZGRneUE3d09zU241ZWlIOUVlZjREUlc4THN4eFlzUGJ3c1NtX1N3WGpVWXZPdmxISU02WXc5MEItVWtvdUNaR0xHaTY4MVMxN3ptdHQzZmhCeDViMGREdWNaVm5WQ1Q2UDZIaHZsWkczZDZiYlRxN2NTZ09NdVRRdWRKamNyNkZrSVhJd21BdEJoODBBak0yZWViQl9lek1JMGZmTFR5WFliN0VjYkswZk0yaVZ0VDdvblgtNkFCbVNGODdjM1FsYzRhdlRnQXVYZnVBZ19UWHhoNFdmVmhLYlVZZFF0aExCNm8wcFZjRDdEZnJ4WXREYzFLY2xOekpTcEhfT3F4XzRIVkhrWUxFeVNWdlZOTkdfSGQxTklUOTJzaldCY3ZEZm1qeUQ2cjNKZmxQV0VaeE0teEM2UWZFaWt1Rmxtc2JKQjdhSktyRXhWRlJwbnhFQlo3THpNa19HanBRTm0ycHpzUWJFVkpOdmp4TlJwSnhuTkRnM2FjdGI5ZEdqckRZVERhY2N5aXJVMEpWT3lHSEVlMkdERHdabmhCYlo2c3hSMnB1WFJNVmJRVmg4Y09lM2J6YV93MUlUM0t6ekVhLVNBcUozS01udlZwa1JxWkpMWklmMDd5V1Ntd3hCNEh1QkRyUkZYZHc0bVpzTzJweE1ON2tUdzkzSEVIb19vbFRiU29UNmVVSHFuTDNIeWJXZk1JNVZIblA2UGh5bThDRjgycE43b3ROMVFCQURHdFdEbURnVVJzQTQxNWppODhSdWdXN2NrWQ"/><style>  
+h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: black;  
+    color: white;  
+    }  
+  
+#clear{  
+width: 270px;  
+border: 3px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    background-color: white;  
+}  
+  
+.formstyle  
+{  
+width: 300px;  
+height: 530px;  
+margin: auto;  
+border: 3px solid burlywood;  
+border-radius: 5px;  
+padding: 20px;  
+}  
+  
+  
+  
+input  
+{  
+width: 20px;  
+background-color: white;  
+color: black;  
+border: 3px solid black;  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 15px;  
+}  
+  
+  
+#calc{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+  
+</style>  
+  
+</head>  
+<body>  
+<h1> Calculator Program in JavaScript </h1>  
+<div class= "formstyle">  
+<form name = "form1">  
+      
+    
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+  <br>   
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+</body>  
+</html>  
